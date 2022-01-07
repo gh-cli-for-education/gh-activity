@@ -12,6 +12,14 @@ This script calculates the following, for each developer in each repository:
 
 The results can be formatted as `csv`, `json`, or `markdown`.
 
+## Installation
+
+You need python3.
+
+```
+gh extension install gh-cli-for-education/gh-activity
+```
+
 ## Running the program
 
 1. Fork this repository and clone it to your local machine
