@@ -1,0 +1,22 @@
+{
+  "name": "git-developer-contribution-analysis",
+  "version": "1.0.0",
+  "description": "This repository contains a command-line tool, written in `python`, to track developers' contributions to one or more Git repositories within a particular time range. GitHub's Insights tools and charts are not extremely useful, and often omit contributors or give misleading statistics.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./gh-analysis.py -rf REPOFILE -f json > markdown-aet.json",
+    "start": "./gh-analysis.py -rf REPOFILE -f markdown > markdown-aet.md",
+    "push": "git ci -am change; git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gh-cli-for-education/git-developer-contribution-analysis.git"
+  },
+  "keywords": [],
+  "author": "bloombar. Forked by Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gh-cli-for-education/git-developer-contribution-analysis/issues"
+  },
+  "homepage": "https://github.com/gh-cli-for-education/git-developer-contribution-analysis#readme"
+}

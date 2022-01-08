@@ -166,7 +166,8 @@ if __name__ == "__main__":
     exclusions = ['package-lock.json', '*.jpg', '*.png', '*.gif', '*.svg', '*.pdf', '*.zip', '*.gz', '*.tar', '*.csv', '*.json']
 
     # get the command-line arguments
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(prog="gh activity")
+    
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("-r", "--repository", help="the public URL of the repository whose logs to parse")
     group.add_argument("-rf", "--repofile", help="the path to simple text file with a list of repository URLs to parse")
@@ -196,7 +197,9 @@ if __name__ == "__main__":
         os.makedirs(repos_dir)
 
     # loop through each git repository url
-    for repo_url in repository_urls:
+    if args.format == 'json':
+        print("[")
+    for i, repo_url in enumerate(repository_urls):
         os.chdir(repos_dir) # start from the parent directory of all repos
         # code = subprocess.run(['pwd']) # check the directory
 
@@ -216,4 +219,9 @@ if __name__ == "__main__":
         results = git_logs_parser.parse()
         output = git_logs_parser.format_results(results, args.format)
         print(output)
-        
+        if args.format == 'json':
+            if i != len(repository_urls) - 1:
+                print(",")
+
+    if args.format == 'json':
+        print("]")

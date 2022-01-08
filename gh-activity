@@ -9,7 +9,8 @@ if ! type -p python3 >/dev/null; then
   exit 1
 fi
 
-python3 gh-analysis.py $@
+SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+python3 ${SCRIPT_DIR}/gh-analysis.py "$@"
 
 # Pass arguments through to another command
 # gh issue list "$@" -R cli/cli
