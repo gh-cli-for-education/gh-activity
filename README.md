@@ -139,5 +139,5 @@ If a single developer has multiple usernames that all show the same statistics, 
 
 ## Copyright
 
-* [Code developed by Bloombar](https://github.com/bloombar/git-developer-contribution-analysis) 2020/2021
-* This is just an adaptation as a gh extension. Casiano Rodríguez (2022)
+* [Code developed by Bloombar: bloombar/git-developer-contribution-analysis](https://github.com/bloombar/git-developer-contribution-analysis) 2020-2021
+* This is just an adaptation to make it a gh extension. Casiano Rodríguez (2022)
