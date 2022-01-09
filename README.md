@@ -31,6 +31,7 @@ The command `gh activity --help` shows the usage instructions:
 
 ```
 usage: gh activity [-h] (-r REPOSITORY | -rf REPOFILE) [-u USER] [-s START] [-e END] [-x EXCLUSIONS] [-f {csv,json,markdown}] [-v]
+                   [-V]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -47,6 +48,7 @@ optional arguments:
   -f {csv,json,markdown}, --format {csv,json,markdown}
                         The format in which to output the results
   -v, --verbose         Whether to output debugging info
+  -V, --version         show program's version number and exit
 ```
 
 ## Example usage
