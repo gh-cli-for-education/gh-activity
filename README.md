@@ -134,3 +134,8 @@ Most likely, the contributor has failed to update their version control settings
 The output of the script sometimes lists the same individual contributor under more than one git username... This is most likely due to different username settings for various git and GitHub clients.
 
 If a single developer has multiple usernames that all show the same statistics, then only count those stats once. Otherwise, if a single developer has multiple usernames that show different statistics, then add them together to come up with the total for that developer.
+
+## Copyright
+
+* [Code developed by Bloombar](https://github.com/bloombar/git-developer-contribution-analysis) 2020/2021
+* This is just an adaptation as a gh extension. Casiano Rodríguez (2022)
